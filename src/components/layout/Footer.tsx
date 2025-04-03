@@ -20,10 +20,6 @@ const Footer = () => {
     {
       title: 'Resources',
       links: ['Blog', 'Newsletter', 'Documentation', 'Support']
-    },
-    {
-      title: 'Legal',
-      links: ['Terms', 'Privacy', 'Security', 'Compliance']
     }
   ];
 
@@ -81,10 +77,6 @@ const Footer = () => {
               <a href="#" className="hover:text-white transition-colors flex items-center">
                 <Mail className="w-4 h-4 mr-2" />
                 contact@contentflow.ai
-              </a>
-              <a href="#" className="hover:text-white transition-colors flex items-center">
-                <Phone className="w-4 h-4 mr-2" />
-                +234 (555) 123-4567
               </a>
             </div>
           </div>

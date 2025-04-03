@@ -24,6 +24,9 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 222 89% 51%;
     --radius: 0.75rem;
+    --font-slabo-headline: 'Slabo 27px', serif;
+    --font-slabo-body: 'Slabo 13px', serif;
+    --font-sans: 'ui-sans-serif', system-ui, sans-serif;
   }
 
   .dark {
@@ -46,11 +49,39 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 224.3 76.3% 48%;
+    --font-slabo-headline: 'Slabo 27px', serif;
+    --font-slabo-body: 'Slabo 13px', serif;
+    --font-sans: 'ui-sans-serif', system-ui, sans-serif;
   }
 
   * {
     @apply border-border;
   }
+
+    /* Apply Slabo 27px to headings */
+    h1, h2, h3 {
+      font-family: var(--font-slabo-headline);
+      @apply font-normal; /* Only regular weight available */
+      line-height: 1.1;
+    }
+  
+    /* Apply Slabo 13px to body text */
+    body {
+      font-family: var(--font-sans);
+      @apply font-normal;
+    }
+  
+    /* Special utility for fixed-size text */
+    .slabo-13 {
+      font-family: var(--font-slabo-body);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .slabo-27 {
+      font-family: var(--font-slabo-headline);
+      font-size: 27px;
+      line-height: 1.1;
+    }
   body {
     @apply bg-background text-foreground;
   }

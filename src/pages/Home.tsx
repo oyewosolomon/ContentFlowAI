@@ -35,7 +35,6 @@ export default function Home() {
       <HeroSection/>
       <HowItWorks/>
       <Features/>
-      <Testimonials/>
       <Pricing/>
       <FAQSection/>      
       <Footer/>
