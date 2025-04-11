@@ -13,8 +13,8 @@ const Pricing = () => {
   const plans = [
     {
       name: "Starter",
-      monthlyPrice: 49,
-      yearlyPrice: 39,
+      monthlyPrice: "20,000",
+      yearlyPrice: "15,000",
       features: [
         "1,000 pieces of content/month",
         "5 languages",
@@ -24,8 +24,8 @@ const Pricing = () => {
     },
     {
       name: "Professional",
-      monthlyPrice: 99,
-      yearlyPrice: 79,
+      monthlyPrice: "80,000",
+      yearlyPrice: "50,000",
       popular: true,
       features: [
         "5,000 pieces of content/month",
@@ -37,8 +37,8 @@ const Pricing = () => {
     },
     {
       name: "Enterprise",
-      monthlyPrice: 199,
-      yearlyPrice: 159,
+      monthlyPrice: "150,000",
+      yearlyPrice: "100,000",
       features: [
         "10,000+ pieces of content/month",
         "20 languages",
@@ -113,7 +113,7 @@ const Pricing = () => {
               <h3 className="text-2xl font-bold mb-4">{plan.name}</h3>
               <div className="mb-6">
                 <span className="text-4xl font-bold">
-                  ${billingCycle === 'monthly' ? plan.monthlyPrice : plan.yearlyPrice}
+                ₦{billingCycle === 'monthly' ? plan.monthlyPrice : plan.yearlyPrice}
                 </span>
                 <span className="text-gray-600">/month</span>
               </div>
